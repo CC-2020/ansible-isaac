@@ -1,0 +1,20 @@
+---
+- hosts: servers
+  tasks:
+    - name: Actualiza el sistema
+      become: true
+      apt:
+        upgrade: yes
+        update_cache: yes
+    - name: Instala Apache
+      become: true
+      apt: name=apache2
+    - name: Instala MySQL
+      become: true
+      apt: name=mysql-server
+    - name: Instala PHP
+      become: true
+      apt: name=php
+    - name: Instala PHP-MySQL
+      become: true
+      apt: name=php-mysql
