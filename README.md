@@ -1,4 +1,4 @@
-# Tarea de Ansible en GCP. 
+# Tarea de Ansible en GCP
 En esta tarea se hace uso de tres instancias: una principal donde se instalará Ansible y dos secundarias que serán configuradas desde la instancia principal a través de Ansible. 
 
 La configuración a realizar consiste en instalar Apache, PHP y MySQL en las instancias secundarias mediante un PlayBook en la instancia principal.
